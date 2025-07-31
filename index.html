@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="fil">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kwento</title>
+    <meta name="description" content="Tuklasin at suportahan ang mga tunay na pelikulang Pilipino. Magkakabit ang mga filmmaker sa mga masigasig na tagasuporta sa pamamagitan ng crowdfunding.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-content">
+                <a href="index.html" class="nav-logo">Kwento</a>
+                
+                <!-- Desktop Navigation -->
+                <div class="nav-links-desktop">
+                    <a href="index.html" class="nav-link">Tahanan</a>
+                    <a href="#films" class="nav-link">Mga Pelikula</a>
+                    <a href="#about" class="nav-link">Tungkol</a>
+                    <a href="#contact" class="nav-link">Makipag-ugnayan</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span class="menu-icon">☰</span>
+                    <span class="close-icon" style="display: none;">✕</span>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div class="nav-links-mobile" id="mobileMenu">
+                <a href="index.html" class="nav-link-mobile">Tahanan</a>
+                <a href="#films" class="nav-link-mobile">Mga Pelikula</a>
+                <a href="#about" class="nav-link-mobile">Tungkol</a>
+                <a href="#contact" class="nav-link-mobile">Makipag-ugnayan</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Kwento ng bawat Pilipino.</h1>
+            <p class="hero-description">
+                Suportahan ang mga kuwentong Pilipino na dapat marinig ng buong mundo. Mula sa puso, para sa puso ng bawat Pilipino.
+            </p>
+            <button class="hero-button" onclick="scrollToFilms()">
+                MGA PELIKULA
+            </button>
+        </div>
+    </section>
+
+    <!-- Featured Films Section -->
+    <section id="films" class="films-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Mga Tampok na Pelikula</h2>
+            </div>
+            
+            <div class="films-grid">
+
+                
+                <!-- Film 1: The Super Parental Guardians -->
+                <div class="film-card film-card-1">
+                    <div class="film-poster">
+                        <img src="Parental.webp" 
+                             alt="The Super Parental Guardians" class="poster-image">
+                        <div class="poster-overlay">
+                            <a href="film-shes-dating-the-gangster.html" class="view-details"> <!-- Change to Parental Guardians -->
+                                <span class="eye-icon">👁</span>
+                                Tingnan ang Detalye
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="film-info">
+                        <h3 class="film-title">The Super Parental Guardians</h3>
+                        <p class="film-meta">2016 • Comedy, Action </p>
+                        <p class="film-description">
+                            Isang pelikulang komedya na umiikot sa buhay nina Arci (Vice Ganda), isang flamboyant at matapang na bakla, at Paco (Coco Martin), isang masungit at seryosong lalaki.
+Matapos mamatay ang kapatid ni Paco, naiwan sa kanilang pangangalaga ang dalawang anak nito. Kahit magkaibang-magkaiba ang kanilang personalidad, napilitan silang magsama para maalagaan ang mga bata.
+Habang pinapalaki nila ang mga bata, sabay rin nilang hinaharap ang mga personal na isyu at mga nakakatawang sitwasyon sa araw-araw. Sa kabila ng tawanan, ipinapakita ng pelikula ang kahalagahan ng pamilya, pagmamahal, at pagtanggap sa isa’t isa.
+                        </p>
+                        
+                        <div class="funding-progress">
+                            <div class="progress-header">
+                                <span class="progress-label">Progress</span>
+                                <span class="progress-percentage">78%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 78%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="film-stats">
+                            <div class="stat">
+                                <div class="stat-value">₱2,340,000</div>
+                                <div class="stat-label">Funds Raised</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-value">₱3,000,000</div>
+                                <div class="stat-label">Funding Goal</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-value">1,247</div>
+                                <div class="stat-label">Supporters</div>
+                            </div>
+                        </div>
+                        
+                        <a href="film-shes-dating-the-gangster.html" class="support-button">
+                            Suportahan ang Pelikulang Ito
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Film 2: Seven Sundays -->
+                <div class="film-card film-card-2">
+                    <div class="film-poster">
+                        <img src="seven sundays.jpg" 
+                             alt="Seven Sundays poster" class="poster-image">
+                        <div class="poster-overlay">
+                            <a href="film-seven-sundays.html" class="view-details">
+                                <span class="eye-icon">👁</span>
+                                Tingnan ang Detalye
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="film-info">
+                        <h3 class="film-title">Seven Sundays</h3>
+                        <p class="film-meta">2017 • Family, Drama</p>
+                        <p class="film-description">
+                            Isang makapangyarihang kuwento tungkol sa isang pamilyang Pilipino na muling nagkakaisa upang alagaan ang kanilang may-sakitna ama, na natutuklasan na ang pagpapagaling ng mga relasyon ay nangangailangan ng higit pa sa mga mabuting intensyon. Isang nakaaantig na paggalugad ng mga tali ng pamilya.
+                        </p>
+                        
+                        <div class="funding-progress">
+                            <div class="progress-header">
+                                <span class="progress-label">Progress</span>
+                                <span class="progress-percentage">92%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 92%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="film-stats">
+                            <div class="stat">
+                                <div class="stat-value">₱4,140,000</div>
+                                <div class="stat-label">Funds Raised</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-value">₱4,500,000</div>
+                                <div class="stat-label">Funding Goal</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-value">2,089</div>
+                                <div class="stat-label">Supporters</div>
+                            </div>
+                        </div>
+                        
+                        <a href="film-seven-sundays.html" class="support-button">
+                            Suportahan ang Pelikulang Ito
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Film 3: 100 Tula Para Kay Stella -->
+                <div class="film-card film-card-3">
+                    <div class="film-poster">
+                        <img src="https://spaceaso25.wordpress.com/wp-content/uploads/2017/11/2017-11-05-02-31-16.png" 
+                             alt="100 Tula Para Kay Stella poster" class="poster-image">
+                        <div class="poster-overlay">
+                            <a href="film-100-tula-para-kay-stella.html" class="view-details">
+                                <span class="eye-icon">👁</span>
+                                Tingnan ang Detalye
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="film-info">
+                        <h3 class="film-title">100 Tula Para Kay Stella</h3>
+                        <p class="film-meta">2017 • Romance, Poetry</p>
+                        <p class="film-description">
+                            Isang malambot at tunay na paglalarawan ng pag-iibigan ng mga millennial na Pilipino, na tumutuklas sa mga tema ng hindi nagkakamahal na pag-ibig, artistic expression, at ang paglalakbay tungo sa pagkakakilala sa sarili.
+                        </p>
+                        
+                        <div class="funding-progress">
+                            <div class="progress-header">
+                                <span class="progress-label">Progress</span>
+                                <span class="progress-percentage">65%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 65%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="film-stats">
+                            <div class="stat">
+                                <div class="stat-value">₱1,625,000</div>
+                                <div class="stat-label">Funds Raised</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-value">₱2,500,000</div>
+                                <div class="stat-label">Funding Goal</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-value">892</div>
+                                <div class="stat-label">Supporters</div>
+                            </div>
+                        </div>
+                        
+                        <a href="film-100-tula-para-kay-stella.html" class="support-button">
+                            Suportahan ang Pelikulang Ito
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="about-title">Kwento</h2>
+                    <p class="about-paragraph">
+                        Ang Kwento ay isang crowdfunding platform na nakatuon sa pagbibigay-lakas sa mga Pilipinong filmmaker na ibahagi ang kanilang mga kuwento sa mas malawak na manonood. Naniniwala kami na ang bawat pelikula ay may kuwentong karapat-dapat marinig — mga kuwentong puno ng damdamin, kultura, at katotohanan ng pagiging Pilipino.
+                    </p>
+                    <p class="about-paragraph">
+                        Layunin naming pagdugtungin ang mga malikhaing isip at mga taong handang sumuporta sa sining ng pelikula. Sa pamamagitan ng Kwento, nagkakaroon ng pagkakataon ang mga proyekto — malaki man o maliit — na maisakatuparan sa tulong ng komunidad.
+                    </p>
+                    <p class="about-paragraph">
+                        Sumama sa aming adbokasiya. Suportahan natin ang pelikulang Pilipino, isang kuwento sa bawat pagkakataon.
+                    </p>
+                </div>
+                
+                <div class="about-image">
+                    <img src="film-about.jpg" 
+                         alt="Filipino filmmaker at work" class="about-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">Tungkol sa Kwento</h3>
+                    <p class="footer-text">Nakatuon sa pagsuporta sa pelikulang Pilipino sa pamamagitan ng crowdfunding at pakikipag-ugnayan sa komunidad.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Para sa mga Filmmaker</h3>
+                    <div class="footer-links">
+                        <a href="#" class="footer-link">Isumite ang Inyong Proyekto</a>
+                        <a href="#" class="footer-link">Mga Kagamitan para sa Filmmaker</a>
+                        <a href="#" class="footer-link">Mga Kuwento ng Tagumpay</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Para sa mga Tagasuporta</h3>
+                    <div class="footer-links">
+                        <a href="#" class="footer-link">Tignan ang Lahat ng Pelikula</a>
+                        <a href="#" class="footer-link">Paano Ito Gumagana</a>
+                        <a href="#" class="footer-link">Mga Alituntunin ng Komunidad</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Makipag-ugnayan</h3>
+                    <div class="footer-contact">
+                        <div class="contact-item">
+                            <span class="contact-icon">✉</span>
+                            <span class="contact-text">support@kwento.ph</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon"></span>
+                            <span class="contact-text">+63 2 8123 4567</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon"></span>
+                            <span class="contact-text">Manila, Philippines</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">© 2025 Kwento. Lahat ng karapatan ay nakalaan. Sumusuporta sa pelikulang Pilipino, isang kuwento sa isang pagkakataon.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
