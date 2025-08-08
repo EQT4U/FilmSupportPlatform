@@ -1,0 +1,296 @@
+
+<!DOCTYPE html>
+<html lang="fil">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Kwento</title>
+    <meta name="description" content="Meet the team behind Kwento - dedicated to supporting Filipino filmmakers and authentic storytelling through crowdfunding.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .about-hero {
+            background: var(--kwento-primary);
+            padding: 8rem 0 4rem 0;
+            text-align: center;
+            color: white;
+        }
+        
+        .about-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: var(--kwento-success);
+        }
+        
+        .team-section {
+            padding: 5rem 0;
+            background: var(--kwento-neutral-light);
+        }
+        
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .team-card {
+            background: white;
+            border-radius: var(--border-radius);
+            padding: 2rem;
+            box-shadow: var(--shadow-custom);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .team-card:hover {
+            transform: translateY(-0.5rem);
+        }
+        
+        .team-photo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin: 0 auto 1.5rem;
+            background: var(--kwento-secondary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: white;
+        }
+        
+        .team-name {
+            font-size: 1.5rem;
+            color: var(--kwento-primary);
+            margin-bottom: 0.5rem;
+        }
+        
+        .team-role {
+            color: var(--kwento-accent);
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        
+        .team-bio {
+            color: var(--kwento-text-dark);
+            line-height: 1.6;
+        }
+        
+        .mission-section {
+            padding: 5rem 0;
+            background: white;
+        }
+        
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .value-card {
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        .value-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .value-title {
+            font-size: 1.25rem;
+            color: var(--kwento-primary);
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-content">
+                <a href="index.html" class="nav-logo">
+                    <img src="logo.png" alt="Kwento" class="nav-logo-img">
+                </a>
+                
+                <div class="nav-links-desktop">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="index.html#films" class="nav-link">Projects</a>
+                    <a href="about.html" class="nav-link">About Us</a>
+                    <a href="index.html#contact" class="nav-link">Connect</a>
+                </div>
+
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span class="menu-icon">☰</span>
+                    <span class="close-icon" style="display: none;">✕</span>
+                </button>
+            </div>
+
+            <div class="nav-links-mobile" id="mobileMenu">
+                <a href="index.html" class="nav-link-mobile">Home</a>
+                <a href="index.html#films" class="nav-link-mobile">Projects</a>
+                <a href="about.html" class="nav-link-mobile">About Us</a>
+                <a href="index.html#contact" class="nav-link-mobile">Connect</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="about-hero">
+        <div class="container">
+            <h1>About Kwento</h1>
+            <p style="font-size: 1.25rem; max-width: 600px; margin: 0 auto;">
+                Meet the passionate team behind the platform that's revolutionizing Filipino cinema funding
+            </p>
+        </div>
+    </section>
+
+    <!-- Founder Section -->
+    <section class="team-section">
+        <div class="container">
+            <h2 class="section-title">Our Founder</h2>
+            <div class="team-grid" style="max-width: 500px; margin: 3rem auto 0;">
+                <div class="team-card">
+                    <div class="team-photo">👤</div>
+                    <h3 class="team-name">Maria Santos</h3>
+                    <p class="team-role">Founder & CEO</p>
+                    <p class="team-bio">
+                        A passionate advocate for Filipino cinema with over 15 years in film production. Maria founded Kwento to bridge the gap between talented filmmakers and audiences who crave authentic stories.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Team Section -->
+    <section class="team-section" style="background: white;">
+        <div class="container">
+            <h2 class="section-title">Our Core Team</h2>
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-photo">🎬</div>
+                    <h3 class="team-name">Juan Dela Cruz</h3>
+                    <p class="team-role">Head of Film Relations</p>
+                    <p class="team-bio">
+                        Former film festival director with deep connections in the indie film community. Juan ensures we support the most compelling projects.
+                    </p>
+                </div>
+                
+                <div class="team-card">
+                    <div class="team-photo">💻</div>
+                    <h3 class="team-name">Anna Reyes</h3>
+                    <p class="team-role">Chief Technology Officer</p>
+                    <p class="team-bio">
+                        Tech visionary who built our platform from the ground up. Anna ensures a seamless experience for both filmmakers and supporters.
+                    </p>
+                </div>
+                
+                <div class="team-card">
+                    <div class="team-photo">📈</div>
+                    <h3 class="team-name">Carlos Martinez</h3>
+                    <p class="team-role">Head of Marketing</p>
+                    <p class="team-bio">
+                        Marketing strategist specializing in cultural content. Carlos helps Filipino films reach their target audiences effectively.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Values -->
+    <section class="mission-section">
+        <div class="container">
+            <h2 class="section-title">Our Mission</h2>
+            <p style="text-align: center; font-size: 1.25rem; max-width: 800px; margin: 0 auto; line-height: 1.6;">
+                To democratize film funding and ensure that every Filipino story worth telling gets the chance to reach its audience.
+            </p>
+            
+            <h3 style="text-align: center; margin-top: 4rem; margin-bottom: 2rem; color: var(--kwento-primary);">Our Values</h3>
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">🎭</div>
+                    <h4 class="value-title">Authentic Storytelling</h4>
+                    <p>We champion genuine Filipino narratives that reflect our rich culture and diverse experiences.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">🤝</div>
+                    <h4 class="value-title">Community First</h4>
+                    <p>Building strong connections between filmmakers and supporters creates lasting impact.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">🌟</div>
+                    <h4 class="value-title">Excellence</h4>
+                    <p>We strive for the highest quality in everything we do, from platform experience to film curation.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">🚀</div>
+                    <h4 class="value-title">Innovation</h4>
+                    <p>Continuously evolving our platform to better serve the Filipino film community.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">Tungkol sa Kwento</h3>
+                    <p class="footer-text">Nakatuon sa pagsuporta sa pelikulang Pilipino sa pamamagitan ng crowdfunding at pakikipag-ugnayan sa komunidad.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Para sa mga Filmmaker</h3>
+                    <div class="footer-links">
+                        <a href="#" class="footer-link">Isumite ang Inyong Proyekto</a>
+                        <a href="#" class="footer-link">Mga Kagamitan para sa Filmmaker</a>
+                        <a href="#" class="footer-link">Mga Kuwento ng Tagumpay</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Para sa mga Tagasuporta</h3>
+                    <div class="footer-links">
+                        <a href="#" class="footer-link">Tignan ang Lahat ng Pelikula</a>
+                        <a href="#" class="footer-link">Paano Ito Gumagana</a>
+                        <a href="#" class="footer-link">Mga Alituntunin ng Komunidad</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Makipag-ugnayan</h3>
+                    <div class="footer-contact">
+                        <div class="contact-item">
+                            <span class="contact-icon">✉</span>
+                            <span class="contact-text">support@kwento.ph</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📞</span>
+                            <span class="contact-text">+63 2 8123 4567</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <span class="contact-text">Manila, Philippines</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">© 2025 Kwento. Lahat ng karapatan ay nakalaan. Sumusuporta sa pelikulang Pilipino, isang kuwento sa isang pagkakataon.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

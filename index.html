@@ -24,7 +24,7 @@
                 <div class="nav-links-desktop">
                     <a href="index.html" class="nav-link">Home</a>
                     <a href="#films" class="nav-link">Projects</a>
-                    <a href="#about" class="nav-link">About Us</a>
+                    <a href="about.html" class="nav-link">About Us</a>
                     <a href="#contact" class="nav-link">Connect</a>
                 </div>
 
@@ -39,7 +39,7 @@
             <div class="nav-links-mobile" id="mobileMenu">
                 <a href="index.html" class="nav-link-mobile">Home</a>
                 <a href="#films" class="nav-link-mobile">Projects</a>
-                <a href="#about" class="nav-link-mobile">About Us</a>
+                <a href="about.html" class="nav-link-mobile">About Us</a>
                 <a href="#contact" class="nav-link-mobile">Connect</a>
             </div>
         </div>
@@ -226,20 +226,20 @@ Habang pinapalaki nila ang mga bata, sabay rin nilang hinaharap ang mga personal
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about-section">
+    <!-- Why Us Section -->
+    <section id="why-us" class="about-section">
         <div class="container">
             <div class="about-content">
                 <div class="about-text">
-                    <h2 class="about-title">About Us</h2>
+                    <h2 class="about-title">Why Choose Kwento?</h2>
                     <p class="about-paragraph">
-                        Ang Kwento ay isang crowdfunding platform na nakatuon sa pagbibigay-lakas sa mga Pilipinong filmmaker na ibahagi ang kanilang mga kuwento sa mas malawak na manonood. Naniniwala kami na ang bawat pelikula ay may kuwentong karapat-dapat marinig — mga kuwentong puno ng damdamin, kultura, at katotohanan ng pagiging Pilipino.
+                        Ang Kwento ay hindi lamang isang crowdfunding platform — kami ay kasosyo ninyo sa pagdadala ng mga autentikong kuwentong Pilipino sa buong mundo. Narito ang mga dahilan kung bakit dapat kayong sumama sa amin:
                     </p>
                     <p class="about-paragraph">
-                        Layunin naming pagdugtungin ang mga malikhaing isip at mga taong handang sumuporta sa sining ng pelikula. Sa pamamagitan ng Kwento, nagkakaroon ng pagkakataon ang mga proyekto — malaki man o maliit — na maisakatuparan sa tulong ng komunidad.
+                        <strong>Direktang Koneksyon:</strong> Walang middleman — direktang ugnayan sa pagitan ng mga filmmaker at mga tagasuporta para sa mas transparenteng proseso.
                     </p>
                     <p class="about-paragraph">
-                        Sumama sa aming adbokasiya. Suportahan natin ang pelikulang Pilipino, isang kuwento sa bawat pagkakataon.
+                        <strong>Suportang Hindi Natatapos:</strong> Hindi lang pondo ang aming ibinibigay — kasama rin namin kayo sa marketing, distribution, at patuloy na guidance hanggang sa maging matagumpay ang inyong pelikula.
                     </p>
                 </div>
                 
@@ -250,6 +250,159 @@ Habang pinapalaki nila ang mga bata, sabay rin nilang hinaharap ang mga personal
             </div>
         </div>
     </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" style="padding: 5rem 0; background: var(--kwento-neutral-light);">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Mga Madalas na Tanong</h2>
+                <p class="section-description">Narito ang mga sagot sa mga pinakamadalas na tanong tungkol sa Kwento</p>
+            </div>
+            
+            <div class="faq-grid" style="display: grid; grid-template-columns: 1fr; gap: 1rem; max-width: 800px; margin: 0 auto;">
+                <div class="faq-item" onclick="openFAQPopup('faq1')">
+                    <div class="faq-question">
+                        <h3>Paano magsisimula sa pagsuporta ng mga pelikula?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                </div>
+                
+                <div class="faq-item" onclick="openFAQPopup('faq2')">
+                    <div class="faq-question">
+                        <h3>Ano ang mangyayari sa aking pera kung hindi maabot ang funding goal?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                </div>
+                
+                <div class="faq-item" onclick="openFAQPopup('faq3')">
+                    <div class="faq-question">
+                        <h3>Paano ko masisiguro na legitimate ang mga proyecto?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                </div>
+                
+                <div class="faq-item" onclick="openFAQPopup('faq4')">
+                    <div class="faq-question">
+                        <h3>May mga rewards ba kapag nag-donate ako?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                </div>
+                
+                <div class="faq-item" onclick="openFAQPopup('faq5')">
+                    <div class="faq-question">
+                        <h3>Paano magiging filmmaker sa platform?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                </div>
+                
+                <div class="faq-item" onclick="openFAQPopup('faq6')">
+                    <div class="faq-question">
+                        <h3>Gaano katagal ang funding period ng bawat projeto?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                </div>
+                
+                <div class="faq-item" onclick="openFAQPopup('faq7')">
+                    <div class="faq-question">
+                        <h3>May bayad ba sa paggamit ng platform?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Popups -->
+    <div id="faq1" class="faq-popup">
+        <div class="popup-overlay" onclick="closeFAQPopup('faq1')"></div>
+        <div class="popup-content">
+            <div class="popup-header">
+                <h3 class="popup-title">Paano magsisimula sa pagsuporta ng mga pelikula?</h3>
+                <button class="popup-close" onclick="closeFAQPopup('faq1')">✕</button>
+            </div>
+            <div class="popup-body">
+                <p>Napakasimple lang! Una, mag-browse sa aming mga featured films at piliin ang proyecto na gusto mong suportahan. Pagkatapos, i-click lang ang "Suportahan ang Pelikulang Ito" button at piliin ang amount na gusto mong i-donate. Pwede rin kayong mag-create ng account para ma-track ninyo ang mga proyektong sinusuportahan ninyo.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="faq2" class="faq-popup">
+        <div class="popup-overlay" onclick="closeFAQPopup('faq2')"></div>
+        <div class="popup-content">
+            <div class="popup-header">
+                <h3 class="popup-title">Ano ang mangyayari sa aking pera kung hindi maabot ang funding goal?</h3>
+                <button class="popup-close" onclick="closeFAQPopup('faq2')">✕</button>
+            </div>
+            <div class="popup-body">
+                <p>Kung hindi maabot ng proyecto ang target funding goal sa loob ng funding period, lahat ng mga donation ay ibabalik sa mga supporters nang buo. Walang charges o deductions. Ginagamit namin ang "all-or-nothing" funding model para masiguro na may sapat na budget ang mga filmmaker para sa kanilang proyecto.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="faq3" class="faq-popup">
+        <div class="popup-overlay" onclick="closeFAQPopup('faq3')"></div>
+        <div class="popup-content">
+            <div class="popup-header">
+                <h3 class="popup-title">Paano ko masisiguro na legitimate ang mga proyecto?</h3>
+                <button class="popup-close" onclick="closeFAQPopup('faq3')">✕</button>
+            </div>
+            <div class="popup-body">
+                <p>Lahat ng mga projeto sa Kwento ay dumadaan sa mahigpit na verification process. Sinusuri namin ang background ng mga filmmaker, ang feasibility ng projeto, at ang mga dokumentong kailangan. May mga trust badges din kami na nagpapakita ng verification status ng bawat projeto. Makikita ninyo rin ang detailed information tungkol sa cast, crew, at production timeline.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="faq4" class="faq-popup">
+        <div class="popup-overlay" onclick="closeFAQPopup('faq4')"></div>
+        <div class="popup-content">
+            <div class="popup-header">
+                <h3 class="popup-title">May mga rewards ba kapag nag-donate ako?</h3>
+                <button class="popup-close" onclick="closeFAQPopup('faq4')">✕</button>
+            </div>
+            <div class="popup-body">
+                <p>Oo! Depende sa amount ng inyong donation, may iba't ibang rewards kayo. Maaaring makakuha kayo ng early access sa film, signed posters, behind-the-scenes content, o kaya naman credits sa pelikula. Sa mas mataas na donations, pwede kayong ma-invite sa premiere night o makakuha ng personal meet and greet sa cast.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="faq5" class="faq-popup">
+        <div class="popup-overlay" onclick="closeFAQPopup('faq5')"></div>
+        <div class="popup-content">
+            <div class="popup-header">
+                <h3 class="popup-title">Paano magiging filmmaker sa platform?</h3>
+                <button class="popup-close" onclick="closeFAQPopup('faq5')">✕</button>
+            </div>
+            <div class="popup-body">
+                <p>Para makapag-submit ng proyecto, kailangan ninyo munang mag-apply sa aming filmmaker program. I-submit ninyo ang script, treatment, budget breakdown, at portfolio ninyo. Mag-undergo din kayo ng interview process para ma-assess ang viability ng projeto. Kapag na-approve na, tutulong namin kayong gumawa ng compelling campaign page.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="faq6" class="faq-popup">
+        <div class="popup-overlay" onclick="closeFAQPopup('faq6')"></div>
+        <div class="popup-content">
+            <div class="popup-header">
+                <h3 class="popup-title">Gaano katagal ang funding period ng bawat projeto?</h3>
+                <button class="popup-close" onclick="closeFAQPopup('faq6')">✕</button>
+            </div>
+            <div class="popup-body">
+                <p>Karaniwang 30-60 days ang funding period ng mga projeto, depende sa laki ng target budget at complexity ng production. Habang tumatagal ang campaign, nagbibigay kami ng regular updates sa progress at may mga special events din para ma-boost ang visibility ng projeto.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="faq7" class="faq-popup">
+        <div class="popup-overlay" onclick="closeFAQPopup('faq7')"></div>
+        <div class="popup-content">
+            <div class="popup-header">
+                <h3 class="popup-title">May bayad ba sa paggamit ng platform?</h3>
+                <button class="popup-close" onclick="closeFAQPopup('faq7')">✕</button>
+            </div>
+            <div class="popup-body">
+                <p>Para sa mga supporters, libre lang ang paggamit ng platform. Para naman sa mga filmmakers, kumukunin lang namin ang 5% platform fee mula sa successfully funded projects. Wala kaming upfront charges - babayad lang kayo kapag successful ang inyong campaign.</p>
+            </div>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer id="contact" class="footer">
