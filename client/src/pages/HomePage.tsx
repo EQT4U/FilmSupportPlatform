@@ -32,6 +32,9 @@ export default function HomePage() {
       {/* Header */}
       <header className="py-8 px-4">
         <div className="container mx-auto text-center">
+          <div className="flex justify-center mb-4">
+            <img src="/logo.png" alt="Philippine Cinema Collective" className="h-16 md:h-24 w-auto object-contain" />
+          </div>
           <h1 className="text-4xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-red-400 mb-4">
             Philippine Cinema Collective
           </h1>

@@ -77,16 +77,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-logo {
-  font-family: 'Merriweather', serif;
-  font-size: 1.5rem;
-  font-weight: 900;
-  color: var(--kwento-secondary);
+  display: flex;
+  align-items: center;
   text-decoration: none;
   transition: opacity 0.3s ease;
 }
 
 .nav-logo:hover {
   opacity: 0.8;
+}
+
+.nav-logo-img {
+  height: 2.5rem;
+  width: auto;
+  object-fit: contain;
 }
 
 .nav-links-desktop {
