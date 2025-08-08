@@ -1,57 +1,53 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Open+Sans:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800;900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
   --background: hsl(0, 0%, 100%);
-  --foreground: hsl(222.2, 84%, 4.9%);
+  --foreground: hsl(0, 0%, 13%);
   --card: hsl(0, 0%, 100%);
-  --card-foreground: hsl(222.2, 84%, 4.9%);
+  --card-foreground: hsl(0, 0%, 13%);
   --popover: hsl(0, 0%, 100%);
-  --popover-foreground: hsl(222.2, 84%, 4.9%);
-  --primary: hsl(0, 65%, 27%);
-  --primary-foreground: hsl(210, 40%, 98%);
-  --secondary: hsl(45, 71%, 60%);
-  --secondary-foreground: hsl(222.2, 84%, 4.9%);
+  --popover-foreground: hsl(0, 0%, 13%);
+  --primary: #1B499D;
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: #3B86E3;
+  --secondary-foreground: hsl(0, 0%, 100%);
   --muted: hsl(210, 40%, 96%);
   --muted-foreground: hsl(215.4, 16.3%, 46.9%);
-  --accent: hsl(210, 40%, 96%);
-  --accent-foreground: hsl(222.2, 84%, 4.9%);
+  --accent: #444546;
+  --accent-foreground: hsl(0, 0%, 100%);
   --destructive: hsl(0, 84.2%, 60.2%);
   --destructive-foreground: hsl(210, 40%, 98%);
   --border: hsl(214.3, 31.8%, 91.4%);
   --input: hsl(214.3, 31.8%, 91.4%);
   --ring: hsl(222.2, 84%, 4.9%);
   --radius: 0.5rem;
-  --cinema-red: hsl(0, 65%, 27%);
-  --cinema-gold: hsl(45, 71%, 60%);
-  --cinema-coral: hsl(0, 65%, 70%);
+  --success: #FABF27;
 }
 
 .dark {
-  --background: hsl(222.2, 84%, 4.9%);
-  --foreground: hsl(210, 40%, 98%);
-  --card: hsl(222.2, 84%, 4.9%);
-  --card-foreground: hsl(210, 40%, 98%);
-  --popover: hsl(222.2, 84%, 4.9%);
-  --popover-foreground: hsl(210, 40%, 98%);
-  --primary: hsl(0, 65%, 40%);
-  --primary-foreground: hsl(222.2, 84%, 4.9%);
-  --secondary: hsl(45, 71%, 45%);
-  --secondary-foreground: hsl(210, 40%, 98%);
+  --background: hsl(0, 0%, 13%);
+  --foreground: hsl(0, 0%, 98%);
+  --card: hsl(0, 0%, 13%);
+  --card-foreground: hsl(0, 0%, 98%);
+  --popover: hsl(0, 0%, 13%);
+  --popover-foreground: hsl(0, 0%, 98%);
+  --primary: #3B86E3;
+  --primary-foreground: hsl(0, 0%, 13%);
+  --secondary: #1B499D;
+  --secondary-foreground: hsl(0, 0%, 100%);
   --muted: hsl(217.2, 32.6%, 17.5%);
   --muted-foreground: hsl(215, 20.2%, 65.1%);
-  --accent: hsl(217.2, 32.6%, 17.5%);
-  --accent-foreground: hsl(210, 40%, 98%);
+  --accent: #444546;
+  --accent-foreground: hsl(0, 0%, 100%);
   --destructive: hsl(0, 62.8%, 30.6%);
   --destructive-foreground: hsl(210, 40%, 98%);
   --border: hsl(217.2, 32.6%, 17.5%);
   --input: hsl(217.2, 32.6%, 17.5%);
   --ring: hsl(212.7, 26.8%, 83.9%);
-  --cinema-red: hsl(0, 65%, 40%);
-  --cinema-gold: hsl(45, 71%, 45%);
-  --cinema-coral: hsl(0, 65%, 55%);
+  --success: #FABF27;
 }
 
 * {
@@ -59,11 +55,13 @@
 }
 
 body {
-  background-color: hsl(var(--background));
-  color: hsl(var(--foreground));
-  font-family: 'Open Sans', sans-serif;
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Merriweather', serif;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
 }

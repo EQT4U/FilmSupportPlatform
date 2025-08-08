@@ -1,14 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
 /* CSS Variables and Base Styles */
 :root {
-  /* Kwento Brand Colors */
-  --kwento-primary: hsl(0, 100%, 27%);
-  --kwento-secondary: hsl(45, 100%, 50%);
-  --kwento-accent: hsl(357, 79%, 66%);
+  /* Updated Brand Colors */
+  --kwento-primary: #1B499D;
+  --kwento-secondary: #3B86E3;
+  --kwento-accent: #444546;
+  --kwento-success: #FABF27;
   --kwento-text-dark: hsl(210, 40%, 15%);
   --kwento-text-light: hsl(0, 0%, 97%);
   --kwento-neutral-light: hsl(0, 0%, 97%);
   --kwento-neutral-medium: hsl(218, 11%, 65%);
-  --kwento-success: hsl(142, 76%, 36%);
   
   /* Layout */
   --max-width: 1200px;
@@ -31,15 +33,17 @@ html {
 }
 
 body {
-  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 400;
   line-height: 1.6;
   color: var(--kwento-text-dark);
   overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Merriweather', serif;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
 }
 
 .container {
@@ -53,7 +57,7 @@ h1, h2, h3, h4, h5, h6 {
   position: fixed;
   top: 0;
   width: 100%;
-  background: linear-gradient(135deg, var(--kwento-primary) 0%, hsl(0, 100%, 21%) 100%);
+  background: var(--kwento-primary);
   z-index: 50;
   backdrop-filter: blur(12px);
   box-shadow: var(--shadow-custom);
@@ -172,10 +176,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Hero Section */
 .hero {
   min-height: 100vh;
-  background: linear-gradient(135deg, hsla(0, 100%, 12%, 0.8), hsla(0, 100%, 10%, 0.9)), 
-              url('felix-mooneeram-evlkOfkQ5rE-unsplash.jpg');
-  background-size: cover;
-  background-position: center;
+  background: var(--kwento-secondary);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -212,8 +213,8 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  background: linear-gradient(135deg, var(--kwento-secondary), hsl(45, 100%, 45%));
-  color: var(--kwento-primary);
+  background: var(--kwento-primary);
+  color: white;
   padding: 1rem 2rem;
   border-radius: var(--border-radius);
   font-weight: 700;
@@ -485,7 +486,7 @@ h1, h2, h3, h4, h5, h6 {
 /* About Section */
 .about-section {
   padding: 5rem 0;
-  background: linear-gradient(135deg, var(--kwento-primary) 0%, hsl(0, 100%, 21%) 100%);
+  background: var(--kwento-primary);
   color: var(--kwento-text-light);
 }
 
