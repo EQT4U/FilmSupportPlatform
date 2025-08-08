@@ -194,7 +194,7 @@ h1, h2, h3, h4, h5, h6 {
 .hero-title {
   font-size: 2.5rem;
   font-weight: 700;
-  color: var(--kwento-text-light);
+  color: #EBB000;
   margin-bottom: 1.5rem;
   line-height: 1.2;
 }
@@ -310,7 +310,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .film-card-1 {
-  background: linear-gradient(135deg, hsl(350, 100%, 95%), hsl(350, 100%, 98%));
+  background: linear-gradient(135deg, hsl(205, 100%, 95%), hsl(205, 100%, 98%));
 }
 
 .film-card-2 {
@@ -318,7 +318,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .film-card-3 {
-  background: linear-gradient(135deg, hsl(30, 100%, 95%), hsl(30, 100%, 98%));
+  background: linear-gradient(135deg, hsl(205, 100%, 95%), hsl(205, 100%, 98%));
 }
 
 .film-poster {
@@ -422,7 +422,7 @@ h1, h2, h3, h4, h5, h6 {
 .progress-percentage {
   font-size: 0.875rem;
   font-weight: 700;
-  color: var(--kwento-success);
+  color: #444546 ;
 }
 
 .progress-bar {
@@ -435,7 +435,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .progress-fill {
   height: 100%;
-  background: linear-gradient(90deg, var(--kwento-success), hsl(142, 76%, 40%));
+  background: #1B499D;
   border-radius: 9999px;
   transition: width 1s ease-out;
 }
@@ -469,7 +469,7 @@ h1, h2, h3, h4, h5, h6 {
 .support-button {
   display: block;
   width: 100%;
-  background: linear-gradient(135deg, var(--kwento-accent), hsl(357, 79%, 60%));
+  background: #EBB000  ;
   color: white;
   font-weight: 600;
   padding: 0.75rem;
@@ -571,7 +571,7 @@ h1, h2, h3, h4, h5, h6 {
 .footer-title {
   font-size: 1.125rem;
   font-weight: 700;
-  color: var(--kwento-secondary);
+  color: #EBB000;
   margin-bottom: 1rem;
 }
 
