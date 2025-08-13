@@ -27,9 +27,9 @@ app.use(passport.session());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// Serve static files from client/dist in production, client/src in development
+// Serve static files from dist/public in production, root in development
 if (process.env.NODE_ENV === 'production') {
-  app.use(express.static(join(__dirname, '../client/dist')));
+  app.use(express.static(join(__dirname, '../dist/public')));
 } else {
   // In development, Vite handles the frontend
   app.use(express.static(join(__dirname, '../')));
@@ -42,7 +42,7 @@ app.use('/api', routesModule);
 // Catch-all handler for SPA routing in production
 if (process.env.NODE_ENV === 'production') {
   app.get('*', (req, res) => {
-    res.sendFile(join(__dirname, '../client/dist/index.html'));
+    res.sendFile(join(__dirname, '../dist/public/index.html'));
   });
 } else {
   // In development, serve the index.html from root for now

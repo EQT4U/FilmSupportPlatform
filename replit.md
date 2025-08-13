@@ -11,15 +11,18 @@ Project approach: Static HTML/CSS prototype (can be upgraded to React/JavaScript
 
 ## System Architecture
 
-**Current Architecture (Static Website):**
-- **Frontend**: Pure HTML5, CSS3, and vanilla JavaScript
-- **Styling**: Custom CSS with modern design patterns, Google Fonts integration  
-- **Structure**: Static HTML files with shared CSS and JavaScript
-- **Server**: Express.js serving static files (development environment)
-- **Images**: External sources (Unsplash) for film posters and backgrounds
+**Current Architecture (Full-Stack React Application):**
+- **Frontend**: React 18 with TypeScript, Vite build system
+- **Styling**: Tailwind CSS with shadcn/ui components
+- **Routing**: Wouter for client-side routing
+- **State Management**: TanStack Query for data fetching and caching
+- **Backend**: Express.js API server with session management
+- **Database**: PostgreSQL with Drizzle ORM (configured but can use in-memory storage)
+- **Build Process**: Vite for frontend, ESBuild for backend
+- **Development**: Unified server serving both frontend and backend
 
-**Previous Architecture (Converted from React):**
-Originally built with React/TypeScript but converted to static HTML for prototype simplicity.
+**Previous Architecture (Static Website):**
+Originally started as static HTML/CSS but evolved into a full-stack React application for better functionality and user experience.
 
 ## Key Components
 
@@ -69,6 +72,13 @@ Originally built with React/TypeScript but converted to static HTML for prototyp
 
 ## Recent Changes
 
+**August 2025:**
+- ✓ Fixed deployment configuration for production builds
+- ✓ Updated server to serve built assets from `dist/public` directory
+- ✓ Corrected React client entry point in `index.html`
+- ✓ Verified production build process works correctly
+- ✓ Updated documentation with proper deployment instructions
+
 **January 2025:**
 - ✓ Converted React application to static HTML/CSS for prototype simplicity
 - ✓ Created individual film detail pages for three authentic Filipino films
@@ -79,18 +89,31 @@ Originally built with React/TypeScript but converted to static HTML for prototyp
 ## Deployment Strategy
 
 **Development Environment**:
-- Express.js server serving static files from root directory
-- Node.js environment with TypeScript support maintained
-- Live reload and development server capabilities
+- Run `npm run dev` to start the unified development server
+- Express.js serves API routes and Vite handles frontend development
+- Hot reload enabled for both frontend and backend changes
+- Server runs on port 5000 with frontend accessible at root path
 
 **Production Build**:
-- Static HTML files can be served from any web server
-- No build process required - files are deployment-ready
-- Images sourced externally (no local asset management needed)
+- `npm run build`: Builds React frontend (to `dist/public`) and Express backend (to `dist/index.js`)
+- `npm start`: Runs production server with `NODE_ENV=production`
+- Server serves static files from `dist/public` and API routes from Express
+- Build output includes optimized assets with cache headers
+
+**Deployment Configuration**:
+For Replit deployments, use these settings:
+- **Build Command**: `npm run build`
+- **Run Command**: `npm start`
+- **Node Environment**: `NODE_ENV=production`
+- **Port**: 5000 (server listens on 0.0.0.0:5000)
 
 **Key Commands**:
-- `npm run dev`: Development server with static file serving
-- Static files accessible directly via file paths
-- No compilation or build step required
+- `npm run dev`: Development server (both frontend and backend)
+- `npm run build`: Production build process
+- `npm start`: Production server
+- `npm run check`: TypeScript checking
 
-The website is designed for easy deployment on any static hosting platform while maintaining the development infrastructure for potential future React/JavaScript upgrades.
+**Important Notes**:
+- Development command `npm run dev` is blocked in production deployments for security
+- Production build creates optimized assets in `dist/` directory
+- Server automatically detects environment and serves appropriate files
