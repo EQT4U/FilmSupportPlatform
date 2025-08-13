@@ -180,7 +180,10 @@ h1, h2, h3, h4, h5, h6 {
 /* Hero Section */
 .hero {
   min-height: 100vh;
-  background: var(--kwento-secondary);
+  background: linear-gradient(rgba(59, 134, 227, 0.7), rgba(59, 134, 227, 0.7)), url('felix-mooneeram-evlkOfkQ5rE-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   display: flex;
   align-items: center;
   justify-content: center;
