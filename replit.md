@@ -101,11 +101,16 @@ Originally started as static HTML/CSS but evolved into a full-stack React applic
 - Build output includes optimized assets with cache headers
 
 **Deployment Configuration**:
-For Replit deployments, use these settings:
+For Replit deployments, configure these settings in the Replit deployment interface:
+
+**Required Settings:**
 - **Build Command**: `npm run build`
 - **Run Command**: `npm start`
-- **Node Environment**: `NODE_ENV=production`
+- **Environment Variables**: 
+  - `NODE_ENV=production`
 - **Port**: 5000 (server listens on 0.0.0.0:5000)
+
+**Important:** The deployment will fail if you use `npm run dev` as the run command since it contains 'dev' which is flagged as a security risk. Always use `npm start` for production deployments.
 
 **Key Commands**:
 - `npm run dev`: Development server (both frontend and backend)
