@@ -41,7 +41,8 @@
                 grid-template-columns: 2fr 1fr;
             }
         }
-        
+
+
         .founder-statement h2 {
             font-size: 2.5rem;
             color: var(--kwento-primary);
@@ -64,24 +65,18 @@
             box-shadow: var(--shadow-custom);
         }
         
-        .founder-photo {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            margin: 0 auto 1.5rem;
-            background: var(--kwento-secondary);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 4rem;
-            color: white;
-            object-fit: cover;
+        .founder-photo img {
+            width: 250px;     
+            height: 250px;
+            object-fit: cover; 
+            border-radius: 10%; 
         }
+
         
         .founder-name {
             font-size: 1.5rem;
             color: var(--kwento-primary);
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.2rem;
             font-weight: 700;
         }
         
@@ -89,6 +84,12 @@
             color: var(--kwento-accent);
             font-weight: 600;
             font-size: 1.125rem;
+        }
+
+        .founder-profile p {
+            font-size: 1rem;
+            color: var(--kwento-text-dark);
+            margin-bottom: 1rem
         }
         
         .studios-section {
@@ -100,7 +101,16 @@
             text-align: center;
             font-size: 2rem;
             color: var(--kwento-primary);
-            margin-bottom: 3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .studios-section p {
+            text-align: center;
+            font-size: 1.125rem;
+            color: var(--kwento-text-dark);
+            max-width: 1100px;
+            margin: 0 auto 3rem auto;
+            line-height: 1.6
         }
         
         .studios-grid {
@@ -267,12 +277,13 @@
         </div>
     </nav>
 
+    
     <!-- Hero Section -->
     <section class="about-hero">
         <div class="container">
-            <h1>About Kwento</h1>
+            <h1>Hi, kami ang ScreenShare PH</h1>
             <p style="font-size: 1.25rem; max-width: 600px; margin: 0 auto;">
-                Empowering Filipino filmmakers through innovative crowdfunding solutions and community support.
+                Ang unang crowdproducing platform kung saan pwedeng mag-ambag ang karaniwang Pinoy — at may tsansang kumita kapag nagtagumpay ang pelikula.
             </p>
         </div>
     </section>
@@ -282,21 +293,17 @@
         <div class="container">
             <div class="founder-content">
                 <div class="founder-statement">
-                    <h2>Our Vision for Filipino Cinema</h2>
+                    <h2>“Gawa, Hindi Hype”</h2>
                     <p>
-                        "Naniniwala ako na ang bawat Pilipinong may kuwentong dapat ikwento ay karapat-dapat na makakuha ng suporta mula sa kanyang mga kababayan. Sa Kwento, hindi lang namin binibigyang-daan ang mga filmmaker na makatanggap ng pondo—binubuo namin ang isang komunidad na nagtutulungan upang maiangat ang kalidad ng pelikulang Pilipino."
-                    </p>
-                    <p>
-                        "Ang aming platform ay nagbibigay ng transparency, accountability, at—higit sa lahat—ng pag-asa na ang mga autentikong kuwentong Pilipino ay makakarating sa mas malawak na audience, hindi lamang dito sa Pilipinas, kundi sa buong mundo."
-                    </p>
-                    <p>
-                        "Samahan ninyo kami sa misyong ito. Hindi lang tayo magiging witness sa mga magagandang pelikula—maging parte tayo ng prosesong magdadala sa Filipino cinema sa susunod na lebel."
+                        "Sa mahigit 20 taon sa industriya, nakita ni Ed Tuviera kung gaano kadaling maaksaya ang talento at pera kapag iilan lang ang may kontrol sa pelikula. Kaya binuo niya ang ScreenShare PH: para bigyan ng puwesto ang tunay na tagasuporta — ikaw — sa proseso ng paggawa at tagumpay ng pelikulang Pinoy. Dito, klaro ang ambag at malinaw ang balik."
                     </p>
                 </div>
                 
                 <div class="founder-profile">
-                    <div class="founder-photo">👨‍💼</div>
-                    <h3 class="founder-name">Maria Santos</h3>
+                    <div class="founder-photo">
+                        <img src="ed-tuviera.jpg" alt="Ed Tuviera">    
+                    </div>
+                    <h3 class="founder-name">Ed Tuviera</h3>
                     <p class="founder-title">Founder & CEO</p>
                 </div>
             </div>
@@ -306,7 +313,10 @@
     <!-- Film Studios Section -->
     <section class="studios-section">
         <div class="container">
-            <h2 class="studios-title">Trusted by Leading Studios</h2>
+            <h2 class="studios-title">Kasama ang mga eksperto sa pelikulang Pinoy
+</h2>
+            <p>Nakipag-partner kami sa mga producer at studio na matagal nang naghahatid ng nationwide hits at award-winning films.</p>
+            
             <div class="studios-grid">
                 <div class="studio-logo">
                     <div class="studio-placeholder">VIVA</div>
@@ -324,12 +334,13 @@
         </div>
     </section>
 
+    
     <!-- Call to Action Section -->
     <section class="cta-section">
         <div class="container">
-            <h2 class="cta-title">Ready to Support Filipino Cinema?</h2>
+            <h2 class="cta-title">Ready ka bang maging co-producer?</h2>
             <p class="cta-description">
-                Join thousands of Filipinos who are already supporting authentic storytelling. Whether you're a filmmaker with a vision or a supporter looking for meaningful stories, Kwento is your platform.
+                Simulan sa ₱500. Ambag mo, kuwento mo rin.
             </p>
             <div class="cta-buttons">
                 <a href="index.html#films" class="cta-button cta-primary">Browse Projects</a>
@@ -338,6 +349,7 @@
         </div>
     </section>
 
+    
     <!-- Footer -->
     <footer id="contact" class="footer">
         <div class="container">
@@ -385,7 +397,7 @@
             </div>
             
             <div class="footer-bottom">
-                <p class="copyright">© 2025 Kwento. Lahat ng karapatan ay nakalaan. Sumusuporta sa pelikulang Pilipino, isang kuwento sa isang pagkakataon.</p>
+                <p class="copyright">© 2025 Screenshare PH. Lahat ng karapatan ay nakalaan. Sumusuporta sa pelikulang Pilipino, isang kuwento sa isang pagkakataon.</p>
             </div>
         </div>
     </footer>
