@@ -39,10 +39,10 @@ The following commands are already configured in package.json:
 ## Build Process Details
 
 The production build:
-1. **Frontend**: Vite builds React app to `dist/public/`
+1. **Frontend**: Static HTML/CSS files served from root directory
 2. **Backend**: ESBuild bundles Express server to `dist/index.js`
-3. **Static Files**: Production server serves built files from `dist/public/`
-4. **Routing**: SPA routing handled by Express catch-all in production
+3. **Static Files**: Production server serves static files from root directory
+4. **Routing**: All routes serve the main index.html static page
 
 ## Verification
 

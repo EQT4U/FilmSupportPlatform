@@ -73,14 +73,16 @@ Originally started as static HTML/CSS but evolved into a full-stack React applic
 ## Recent Changes
 
 **August 13, 2025:**
+- ✓ **FIXED DEPLOYMENT INCONSISTENCY**: Updated server to serve static HTML in both preview and deployment
+- ✓ Resolved deployment vs preview differences - now both environments serve identical static site
+- ✓ Modified server configuration to always serve static files from root directory
+- ✓ Simplified server routing to consistently serve static HTML index.html
+- ✓ Verified both development and production modes now show the same "Screenshare PH" site
 - ✓ Resolved deployment errors with production configuration
 - ✓ Created PRODUCTION_DEPLOYMENT.md guide with manual .replit fixes
 - ✓ Verified production build process generates correct assets
 - ✓ Tested production server functionality with NODE_ENV=production
 - ✓ Confirmed build and start commands work properly for deployment
-- ✓ Applied deployment fixes - build and start commands are working correctly
-- ✓ Verified npm run build creates optimized production assets
-- ✓ Confirmed npm start runs production server successfully
 
 **August 2025:**
 - ✓ Fixed deployment configuration for production builds
@@ -107,10 +109,10 @@ Originally started as static HTML/CSS but evolved into a full-stack React applic
 - Server runs on port 5000 with frontend accessible at root path
 
 **Production Build**:
-- `npm run build`: Builds React frontend (to `dist/public`) and Express backend (to `dist/index.js`)
+- `npm run build`: Builds static assets and Express backend (to `dist/index.js`)
 - `npm start`: Runs production server with `NODE_ENV=production`
-- Server serves static files from `dist/public` and API routes from Express
-- Build output includes optimized assets with cache headers
+- Server serves static HTML/CSS files from root directory
+- Build output includes bundled backend server
 
 **Deployment Configuration**:
 
