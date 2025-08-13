@@ -11,18 +11,12 @@ Project approach: Static HTML/CSS prototype (can be upgraded to React/JavaScript
 
 ## System Architecture
 
-**Current Architecture (Full-Stack React Application):**
-- **Frontend**: React 18 with TypeScript, Vite build system
-- **Styling**: Tailwind CSS with shadcn/ui components
-- **Routing**: Wouter for client-side routing
-- **State Management**: TanStack Query for data fetching and caching
-- **Backend**: Express.js API server with session management
-- **Database**: PostgreSQL with Drizzle ORM (configured but can use in-memory storage)
-- **Build Process**: Vite for frontend, ESBuild for backend
-- **Development**: Unified server serving both frontend and backend
-
-**Previous Architecture (Static Website):**
-Originally started as static HTML/CSS but evolved into a full-stack React application for better functionality and user experience.
+**Current Architecture (Static Website):**
+- **Frontend**: Static HTML/CSS with vanilla JavaScript
+- **Styling**: Custom CSS with responsive design
+- **Backend**: Express.js server for static file serving
+- **Build Process**: ESBuild for backend bundling
+- **Development**: Express server serving static files from root directory
 
 ## Key Components
 
@@ -67,34 +61,31 @@ Originally started as static HTML/CSS but evolved into a full-stack React applic
 
 ### Development Environment
 - Express.js server configured to serve static files from root directory
-- Live development server with hot reload capabilities
-- TypeScript infrastructure maintained for potential future React upgrade
+- Live development server capabilities
+- Simple static file serving architecture
 
 ## Recent Changes
 
 **August 13, 2025:**
+- ✓ **CLEANED UP UNUSED REACT COMPONENTS**: Removed React app directories and references
 - ✓ **FIXED DEPLOYMENT INCONSISTENCY**: Updated server to serve static HTML in both preview and deployment
 - ✓ Resolved deployment vs preview differences - now both environments serve identical static site
 - ✓ Modified server configuration to always serve static files from root directory
 - ✓ Simplified server routing to consistently serve static HTML index.html
 - ✓ Verified both development and production modes now show the same "Screenshare PH" site
-- ✓ Resolved deployment errors with production configuration
-- ✓ Created PRODUCTION_DEPLOYMENT.md guide with manual .replit fixes
-- ✓ Verified production build process generates correct assets
-- ✓ Tested production server functionality with NODE_ENV=production
+- ✓ Updated documentation to reflect static-only architecture
+- ✓ Removed references to React "Philippine Cinema Collective" app
 - ✓ Confirmed build and start commands work properly for deployment
 
 **August 2025:**
-- ✓ Fixed deployment configuration for production builds
-- ✓ Updated server to serve built assets from `dist/public` directory
-- ✓ Corrected React client entry point in `index.html`
-- ✓ Verified production build process works correctly
-- ✓ Updated documentation with proper deployment instructions
-- ✓ Confirmed build command generates optimized production assets
-- ✓ Validated server configuration for NODE_ENV production mode
+- ✓ Simplified deployment configuration for static file serving
+- ✓ Updated server to serve static files from root directory
+- ✓ Removed React dependencies and complexity
+- ✓ Streamlined build process for static website
+- ✓ Updated documentation for static deployment
 
 **January 2025:**
-- ✓ Converted React application to static HTML/CSS for prototype simplicity
+- ✓ Built static HTML/CSS website for Filipino cinema crowdfunding
 - ✓ Created individual film detail pages for three authentic Filipino films
 - ✓ Implemented responsive design with Filipino cinema theme colors
 - ✓ Added interactive gallery functionality and mobile navigation
@@ -103,16 +94,15 @@ Originally started as static HTML/CSS but evolved into a full-stack React applic
 ## Deployment Strategy
 
 **Development Environment**:
-- Run `npm run dev` to start the unified development server
-- Express.js serves API routes and Vite handles frontend development
-- Hot reload enabled for both frontend and backend changes
-- Server runs on port 5000 with frontend accessible at root path
+- Run `npm run dev` to start the development server
+- Express.js serves static HTML/CSS files from root directory
+- Server runs on port 5000 with website accessible at root path
 
 **Production Build**:
-- `npm run build`: Builds static assets and Express backend (to `dist/index.js`)
+- `npm run build`: Builds Express backend server (to `dist/index.js`)
 - `npm start`: Runs production server with `NODE_ENV=production`
 - Server serves static HTML/CSS files from root directory
-- Build output includes bundled backend server
+- No frontend build needed - uses static files directly
 
 **Deployment Configuration**:
 
